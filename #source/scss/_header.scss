@@ -1,0 +1,129 @@
+.header {
+
+   &__container {
+      display: flex;
+      align-items: center;
+      min-height: 152px;
+      padding: 5px 15px;
+   }
+
+   &__logo {
+      margin: 0px 8.623188% 0px 0px;
+
+      @media (max-width: em(990.98)) {
+         flex: 1 1 auto;
+      }
+      @media (max-width: em(489.98)) {
+         flex: 0 0 40px;
+         overflow: hidden;
+      }
+   }
+
+   &__menu {
+      flex: 1 1 auto;
+   }
+
+   &__button {
+   }
+
+   &__cart {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+   }
+
+   &__burger {
+      display: inline-flex;
+      flex-direction: column;
+      row-gap: 6px;
+      span {
+         display: inline-flex;
+         border-radius: 10px;
+         height: 4px;
+         background: rgb(240, 19, 155);
+         width: 30px;
+         margin-left: 20px;
+      }
+
+      @media (min-width: em(991)) {
+         display: none;
+      }
+   }
+}
+
+//==================================================|==================================================
+.menu {
+
+   &__list {
+      display: flex;
+      gap: 41px;
+      @media (max-width: em(990.98)) {
+         display: none;
+      }
+   }
+
+   &__link {
+      font-family: 'Roboto';
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 1.68;
+      letter-spacing: 0.36px;
+      color: #274C5B;
+
+      &_active {
+         color: #7EB693;
+      }
+
+      &:hover {
+         text-decoration: underline;
+      }
+   }
+}
+
+//==================================================|==================================================
+.cart {
+   border: 1px solid #D4D4D4;
+   border-radius: 33px;
+   padding: 7px 30px 7px 11px;
+   @media (max-width: em(424.98)) {
+      padding: 5px 15px 5px 8px;
+   }
+   &:hover {
+      background-color: #f3f3f3;
+   }
+
+   &__icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: #274C5B;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   &__text {
+      font-family: 'Roboto';
+
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 1.7;
+      letter-spacing: 0.36px;
+      color: #274C5B;
+
+      &:hover {
+         text-decoration: underline;
+      }
+   }
+
+   &__counter {
+      font-family: 'Roboto';
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1;
+      letter-spacing: 0.36px;
+      color: #274C5B;
+   }
+}
+
+//==================================================|==================================================
